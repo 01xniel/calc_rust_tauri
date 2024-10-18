@@ -11,7 +11,6 @@ use tauri::{TitleBarStyle, WebviewUrl, WebviewWindowBuilder};
 use evaluation::Operand;
 
 
-#[derive(Default)]
 struct CurrentEquation {
   operand1: String,
   operand2: String,
