@@ -1,0 +1,89 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(fonts/JetBrainsMono.ttf);
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px 15px 15px 15px;
+  background-color: black;
+}
+
+.value {
+  font-family: JetBrainsMono;
+  font-size: 40px;
+  color: #F7F7F7;
+  margin: 0px;
+  text-align: end;
+  overflow-x: auto;
+}
+.value::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttons_row {
+  display: flex;
+  gap: 5px;
+}
+.buttons_row:last-child {
+  margin-top: 5px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  font-family: JetBrainsMono;
+  font-size: 20px;
+  transition: background-color 0.6s;
+  color: #F7F7F7;
+}
+
+.number {
+  background-color: #242124;
+}
+.number:active {
+  background-color: #403B40;
+  transition: background-color 0s;
+}
+
+.math-operator {
+  background-color: #FF7900;
+}
+.math-operator:active {
+  background-color: #FF9D47;
+  transition: background-color 0s;
+}
+
+.active {
+  background-color: #F7F7F7;
+  color: #FF9D47;
+}
+.active:active {
+  background-color: #EBEBEB;
+  transition: background-color 0s;
+}
+
+.operation {
+  width: 125px;
+  border-radius: 30px;
+  background-color: #4D5D53;
+}
+.operation:active {
+  background-color: #667A6E;
+  transition: background-color 0s;
+}
