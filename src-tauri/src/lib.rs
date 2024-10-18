@@ -17,6 +17,7 @@ struct CurrentEquation {
   operator: String
 }
 
+
 #[tauri::command]
 fn process_num_button(button: &str, state: tauri::State<'_, Mutex<CurrentEquation>>) -> String {
   let mut state = state.lock().unwrap();
